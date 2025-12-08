@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minor Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Comprehensive Form Demo</h1>
+        <form action="/submit-data" method="POST">
+            
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="enter valid name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="user@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="tel">Phone Number:</label>
+                    <input type="tel" id="tel" name="phone" placeholder="enter 10 digit number">
+                </div>
+                <div class="form-group">
+                    <label for="url">Website URL:</label>
+                    <input type="url" id="url" name="website" placeholder="https://example.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="enter strong password" required>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Numerical & Time Selection</legend>
+                <div class="form-group">
+                    <label for="number">Quantity (1-10):</label>
+                    <input type="number" id="number" name="quantity" min="1" max="10" value="1">
+                </div>
+                <div class="form-group">
+                    <label for="range">Slider Value:</label>
+                    <input type="range" id="range" name="slider" min="0" max="100" value="10">
+                </div>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time">
+                </div>
+                <div class="form-group">
+                    <label for="datetime">Local Date & Time:</label>
+                    <input type="datetime-local" id="datetime" name="datetime">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Choices & Uploads</legend>
+                
+                <div class="form-group">
+                    <label for="color">Favorite Color:</label>
+                    <input type="color" id="color" name="color">
+                </div>
+
+                <div class="form-group">
+                    <label for="file">Upload File:</label>
+                    <input type="file" id="file" name="document">
+                </div>
+                
+                <div class="form-group">
+                    <label for="country">Select Country:</label>
+                    <select id="country" name="country">
+                        <option value="usa">India</option>
+                        <option value="can">Canada</option>
+                        <option value="uk">UK</option>
+                        <option value="uk">USA</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Agreement</legend>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions.</label>
+                </div>
+                
+                <div class="radio-group">
+                    <span>Newsletter Subscription:</span>
+                    <input type="radio" id="yes" name="newsletter" value="yes" checked>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="newsletter" value="no">
+                    <label for="no">No</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter your message..."></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="submit-btn">Submit Form</button>
+            <input type="reset" value="Reset Form" class="reset-btn">
+        </form>
+    </div>
+
+</body>
+</html>
